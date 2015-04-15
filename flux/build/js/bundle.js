@@ -19240,7 +19240,7 @@ var DeleteButton = React.createClass({displayName: "DeleteButton",
 
   render: function() {
     return (
-      React.createElement("div", {className: "component__item component__item__clear", onClick: this._onDelete}, React.createElement("span", null, "Delete"))
+      React.createElement("div", {className: "component__naviItem component__naviItem--clear", onClick: this._onDelete}, React.createElement("span", null, "Delete"))
     );
   },
 
@@ -19302,7 +19302,7 @@ var Navi = React.createClass({displayName: "Navi",
   render: function() {
     var current = this.props.appData._current;
     return (
-      React.createElement("div", {className: "component__nav"}, 
+      React.createElement("div", {className: "component__navi"}, 
         React.createElement(RequestButton, {current: current, label: "Sample1", id: "1"}), 
         React.createElement(RequestButton, {current: current, label: "Sample2", id: "2"}), 
         React.createElement(RequestButton, {current: current, label: "Sample3", id: "3"}), 
@@ -19329,9 +19329,8 @@ var RequestButton = React.createClass({displayName: "RequestButton",
 
 
   render: function() {
-    console.log('this.state');
-    console.log(this.state);
-    var cn = this.props.current === this.props.id ? 'component__item component__item--isActive' : 'component__item';
+    // ここもっと良い方法があるはず・・・。
+    var cn = this.props.current === this.props.id ? 'component__naviItem is-active' : 'component__naviItem';
     return (
       React.createElement("div", {className: cn, onClick: this._onRequest}, React.createElement("span", null, this.props.label))
     );

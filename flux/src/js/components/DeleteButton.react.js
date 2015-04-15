@@ -7,7 +7,7 @@ var DeleteButton = React.createClass({
 
   render: function() {
     return (
-      <div className="component__item component__item__clear" onClick={this._onDelete}><span>Delete</span></div>
+      <div className="component__naviItem component__naviItem--clear" onClick={this._onDelete}><span>Delete</span></div>
     );
   },
 

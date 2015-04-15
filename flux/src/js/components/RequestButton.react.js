@@ -12,7 +12,7 @@ var RequestButton = React.createClass({
 
   render: function() {
     // ここもっと良い方法があるはず・・・。
-    var cn = this.props.current === this.props.id ? 'component__item component__item--isActive' : 'component__item';
+    var cn = this.props.current === this.props.id ? 'component__naviItem is-active' : 'component__naviItem';
     return (
       <div className={cn} onClick={this._onRequest}><span>{this.props.label}</span></div>
     );
