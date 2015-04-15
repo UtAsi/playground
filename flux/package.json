@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asai",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "del": "^1.1.1",
+    "flux": "^2.0.1",
+    "gulp": "^3.8.11",
+    "keymirror": "~0.1.0",
+    "react": "^0.12.0",
+    "reactify": "^0.15.2",
+    "run-sequence": "^1.0.2",
+    "vinyl-source-stream": "^0.1.1",
+    "object-assign": "^1.0.0"
+  }
+}

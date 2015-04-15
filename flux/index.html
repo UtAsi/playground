@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>-</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+      }
+      .component {
+        padding:15px;
+      }
+      .component__nav {
+        margin-bottom: 20px;
+      }
+      .component__item {
+        margin: 0 10px;
+        display: inline-block;
+        width: 100px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border: 1px solid #ccc;
+        background-color: #eaeaea;
+        text-align: center;
+        line-height: 30px;
+        font-weight: normal;
+      }
+      .component__item__clear {
+        background-color: #aaa;
+        color: #fff;
+        font-weight: bold;
+      }
+      .component__item--isActive {
+        background-color: #666;
+      }
+      .component__item--isActive > span {
+        color: #fff;
+        font-weight: bold;
+      }
+      .component__content {
+        padding:0 10px;
+      }
+      .component__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .component__listItem {
+        padding: 0 5px;
+        line-height: 20px;
+        background-color: #eaeaea;
+        border-bottom: 1px solid #ccc;
+        font-size: 12px;
+      }
+      .component__listItem:nth-child(even) {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="component">
+        <div id="js-react"></div>
+      </div>
+    </div>
+    <script src="./libs/lib.min.js"></script>
+    <script src="./build/js/bundle.js"></script>
+  </body>
+</html>
